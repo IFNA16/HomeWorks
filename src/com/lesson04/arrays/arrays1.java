@@ -20,9 +20,9 @@ public class arrays1 {
         printArray(array);
     }
 
-    private static void printArray(int[][] array){
-        for (int i = 0; i < array.length; i++){
-            for (int j = 0; j < array[0].length; j++){
+    private static void printArray(int[][] array) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[0].length; j++) {
                 int content = array[i][j];
                 System.out.print(content < 10 ? "0" + content : content);
                 System.out.print(" ");

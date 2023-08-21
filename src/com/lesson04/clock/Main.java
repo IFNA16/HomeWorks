@@ -9,13 +9,13 @@ public class Main {
         int hours = 24;
         int minutes = 60;
         int count = 0;
-        for (int i = 0; i <= hours; i++){
+        for (int i = 0; i <= hours; i++) {
             int h1 = i / 10;
             int h2 = i % 10;
-            for (int j = 0; j < minutes; j++){
+            for (int j = 0; j < minutes; j++) {
                 int m1 = j / 10;
                 int m2 = j % 10;
-                if ( h1 == m2 && h2 == m1){
+                if (h1 == m2 && h2 == m1) {
                     System.out.println("" + h1 + h2 + " : " + m1 + m2);
                     count++;
                 }

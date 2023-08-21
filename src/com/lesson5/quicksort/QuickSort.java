@@ -30,30 +30,30 @@ public class QuickSort {
             return;
         }
         int pivotIndex = partitioning(array, start, end);
-        qSort(array, start, pivotIndex - 1 );
+        qSort(array, start, pivotIndex - 1);
         qSort(array, pivotIndex + 1, end);
 
     }
 
-    private static int partitioning(int[] array, int start, int end){
+    private static int partitioning(int[] array, int start, int end) {
         Random rnd = new Random();
         int pivotIndex = rnd.nextInt(start, end + 1);
         int pivot = array[pivotIndex];
         int low = start;
         int high = end;
 
-        while (low < high){
-            if (array[low] < pivot){
+        while (low < high) {
+            if (array[low] < pivot) {
                 low++;
                 continue;
             }
-            if (array[high] > pivot){
+            if (array[high] > pivot) {
                 high--;
                 continue;
             }
 
             swap(array, low, high);
-            if(array[low] == array[high]){
+            if (array[low] == array[high]) {
                 low++;
             }
         }

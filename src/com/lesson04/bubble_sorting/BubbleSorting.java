@@ -12,12 +12,12 @@ public class BubbleSorting {
     public static void main(String[] args) {
 
         Random rnd = new Random();
-        int[] randomArray = new int[rnd.nextInt(10,100)];
-        for(int i = 0; i < randomArray.length; i++){
+        int[] randomArray = new int[rnd.nextInt(10, 100)];
+        for (int i = 0; i < randomArray.length; i++) {
             randomArray[i] = rnd.nextInt(100);
         }
         System.out.println("Array length: " + randomArray.length);
-        System.out.println("Predicted worst sort count n^2 : " +randomArray.length * randomArray.length);
+        System.out.println("Predicted worst sort count n^2 : " + randomArray.length * randomArray.length);
         System.out.print("Unsorted array : ");
         printArray(randomArray);
         sort(randomArray);
@@ -28,14 +28,14 @@ public class BubbleSorting {
     }
 
 
-    private static void sort (int[] array){
+    private static void sort(int[] array) {
         int tempCounter = 1;
-        while(tempCounter != 0){
+        while (tempCounter != 0) {
             tempCounter = 0;
-            for(int i = 0; i < array.length - 1; i++){
-                if(array[i] > array[i+1]){
-                    int temp = array[i+1];
-                    array[i+1] = array[i];
+            for (int i = 0; i < array.length - 1; i++) {
+                if (array[i] > array[i + 1]) {
+                    int temp = array[i + 1];
+                    array[i + 1] = array[i];
                     array[i] = temp;
                     counter++;
                     tempCounter++;
@@ -44,8 +44,8 @@ public class BubbleSorting {
         }
     }
 
-    private static void printArray(int[] array){
-        for(int i : array){
+    private static void printArray(int[] array) {
+        for (int i : array) {
             System.out.print(i + " ");
         }
         System.out.println();

@@ -11,13 +11,13 @@ public class Main {
 
     public static void main(String[] args) {
         Random rnd = new Random();
-        int guessNumber = rnd.nextInt(1,11);
+        int guessNumber = rnd.nextInt(1, 11);
         System.out.println("Please enter number from 1 to 10");
         //System.out.println(guessNumber);
         Scanner scanner = new Scanner(System.in);
         int printedNumber = scanner.nextInt();
 
-        if(printedNumber == guessNumber){
+        if (printedNumber == guessNumber) {
             System.out.println("You WIN! number was: " + guessNumber);
         } else {
             System.out.println("You LOSE! number was: " + guessNumber);

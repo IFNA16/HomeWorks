@@ -14,12 +14,12 @@ public class Main {
         int number = scanner.nextInt();
         int residue = number;
         int sum = 0;
-        while(number >= 9) {
+        while (number >= 9) {
             residue = number % 10;
             sum += residue;
             number /= 10;
         }
-        sum +=number;
+        sum += number;
         System.out.println("Sum is: " + sum);
     }
 }

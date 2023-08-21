@@ -19,7 +19,7 @@ public class Main {
         int temp = 0;
 
         for (int i = 1; i <= printedNumber; i++) {
-            if(i == 2) act = 1;
+            if (i == 2) act = 1;
             System.out.println(act);
             temp = prev + act;
             prev = act;

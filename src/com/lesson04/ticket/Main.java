@@ -9,12 +9,12 @@ public class Main {
         int ticketsMax = 99999;
         int digits = 6;
         int count = 0;
-        for (int i = 0; i <= ticketsMax; i++){
+        for (int i = 0; i <= ticketsMax; i++) {
             int leftSum = 0;
             int rightSum = 0;
             int number = i;
-            for (int j = 0; j < digits; j++){
-                if (j < digits / 2){
+            for (int j = 0; j < digits; j++) {
+                if (j < digits / 2) {
                     rightSum += number % 10;
                 } else {
                     leftSum += number % 10;

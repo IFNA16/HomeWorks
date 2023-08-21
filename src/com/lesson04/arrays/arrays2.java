@@ -30,7 +30,7 @@ public class arrays2 {
                 System.out.print(content);
                 System.out.print(" ");
             }
-            if ( currentNum > max) {
+            if (currentNum > max) {
                 max = currentNum;
                 maxRow = i + 1;
             }
